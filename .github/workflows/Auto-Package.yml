@@ -9,19 +9,20 @@
 name: Auto-Packages
 
 on: 
-#   repository_dispatch:
-#    push: 
-#      branches:
-#        - master
-#    schedule:
-#      - cron: 0 1 */1 * *
- repository_dispatch:
+  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+#   repository_dispatch:
+#    push: 
+#      branches:
+#        - master
+#    schedule:
+#      - cron: 0 1 */1 * *
+
 
 
 env:
